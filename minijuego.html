@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1c25">
+  <title>Minijuego de bateo | Cómo la Béisbol</title>
+  <link rel="stylesheet" href="css/minijuego.css">
+  <script src="js/minijuego.js" defer></script>
+</head>
+<body>
+  <main class="juego" id="juego">
+    <canvas id="lienzo" tabindex="0" aria-label="Zona de juego. Toca para batear cuando la flecha esté arriba."></canvas>
+
+    <div class="marcador" aria-live="off">
+      <span class="marcador-etiqueta">META</span>
+      <strong id="meta-puntos">750</strong>
+      <span class="marcador-etiqueta">RÉCORD</span>
+      <strong id="record-puntos">0</strong>
+    </div>
+
+    <div class="barra" aria-label="Medidor de potencia. Arriba vale más puntos.">
+      <span class="barra-label numero-verde">1000</span>
+
+      <div class="barra-pista">
+        <div class="barra-zona-alta"></div>
+        <img
+          src="assets/minijuego/flecha.webp"
+          class="barra-flecha"
+          id="barra-flecha"
+          alt=""
+          aria-hidden="true"
+        >
+      </div>
+
+      <span class="barra-label numero-rojo">0</span>
+    </div>
+
+    <button
+      type="button"
+      class="boton-sonido"
+      id="boton-sonido"
+      aria-label="Sonido"
+      aria-pressed="true"
+    >
+      🔊
+    </button>
+
+    <a class="salir" href="index.html" aria-label="Salir del minijuego">Salir ✕</a>
+    <p class="instrucciones" id="instrucciones">Toca la pantalla cuando la flecha esté arriba para batear</p>
+
+    <section class="resultado" id="resultado" hidden role="dialog" aria-modal="true" aria-labelledby="resultado-titulo">
+      <div class="resultado-panel">
+        <h1 id="resultado-titulo">Resultado</h1>
+        <p class="resultado-cantidad"><strong id="puntos-obtenidos">0</strong> / 1000 puntos</p>
+        <p id="resultado-mensaje"></p>
+        <p id="premio-nombre" class="premio-nombre" hidden></p>
+        <div class="resultado-acciones">
+          <button id="reclamar" type="button" hidden>Recibir premio</button>
+          <button id="reintentar" type="button" hidden>Reintentar</button>
+          <a href="index.html" class="salir-resultados">Salir</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

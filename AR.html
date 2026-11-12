@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Como la beisbol</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">    
+    </head>
+    <body>
+
+
+    <main class="page">
+      <div id="header-container">
+        <!-- El contenido del header se carga aquí mediante JavaScript asi creo que es mas facil de enteder, mas modular xd -->
+      </div>
+      
+
+      <div class="contenedor-general"> <!--No se como ponerle la esctructura a este div xd-->
+        <h2 class="titulo-interior">Premios desbloqueados</h2>
+        <div class="collection-tabs" role="tablist" aria-label="Tipo de premio">
+          <button
+            id="tab-cartas"
+            class="collection-tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-cartas"
+            tabindex="0"
+            data-collection-tab>
+            Cartas
+          </button>
+          <button
+            id="tab-gorras"
+            class="collection-tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-gorras"
+            tabindex="-1"
+            data-collection-tab>
+            Gorras
+          </button>
+        </div>
+        <section
+          id="panel-cartas"
+          class="collection-panel"
+          role="tabpanel"
+          aria-labelledby="tab-cartas">
+        <div class="model-viewer-container">
+            
+        
+             <!--
+            <model-viewer 
+            src="assets/Silla-de-angel-para-AR.glb"
+            loading="lazy"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="assets/5.png"
+            shadow-intensity="1"
+            auto-rotate
+            scale="0.1 0.1 0.1"
+            class="model-viewer"
+            >
+              <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+              </div>
+           </model-viewer>
+            -->
+           <!--
+            <model-viewer 
+            src="assets/Animacioncarta.glb" 
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral"
+            shadow-intensity="1" 
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            
+            <model-viewer 
+            src="assets/DonChepo.glb" 
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            poster="assets/DonChepo.png" 
+            shadow-intensity="1" 
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+        
+           
+            <model-viewer 
+            src="assets/silentema1.glb" 
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            
+            shadow-intensity="1" 
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+            -->
+
+            <!---Modelos de las cartas apartir de aqui abajo-->
+            <model-viewer 
+            data-src="assets/Animacioncarta1Veracruz.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta2Leon.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta3Queretaro.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta4CiudadDeMexico.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta5Guerrero.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta6Yucatan.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta7Tabasco.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta8Puebla.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta9Campeche.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+
+            <model-viewer 
+            data-src="assets/Animacioncarta10Qroo.glb"
+            loading="lazy"
+            hidden
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            camera-controls 
+            tone-mapping="neutral" 
+            shadow-intensity="1" 
+            touch-action="pan-y"
+            autoplay
+            scale="0.5 0.5 0.5"
+            class="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+          </div>
+        </section>
+        <section
+            id="panel-gorras"
+            class="collection-panel"
+            role="tabpanel"
+            aria-labelledby="tab-gorras"
+            hidden>
+
+            <div class="model-viewer-container" id="coleccion-gorras">
+                <p class="collection-empty">
+                    Aún no has desbloqueado gorras.
+                </p>
+            </div>
+        </section>
+          
+      </div>
+    </main>
+    <script src="js/javascript.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const contenedor = document.getElementById("coleccion-gorras");
+
+        let gorrasDesbloqueadas = [];
+
+        try {
+            gorrasDesbloqueadas = JSON.parse(
+                localStorage.getItem("gorrasDesbloqueadas") || "[]"
+            );
+        } catch (error) {
+            console.error("Error al cargar las gorras:", error);
+        }
+
+        if (!Array.isArray(gorrasDesbloqueadas) || gorrasDesbloqueadas.length === 0) {
+            return;
+        }
+
+        contenedor.innerHTML = "";
+
+        gorrasDesbloqueadas.forEach(ruta => {
+            const modelo = document.createElement("model-viewer");
+
+            modelo.setAttribute("src", ruta);
+            modelo.setAttribute("loading", "lazy");
+            modelo.setAttribute("camera-controls", "");
+            modelo.setAttribute("auto-rotate", "");
+            modelo.setAttribute("ar", "");
+            modelo.setAttribute("ar-modes", "scene-viewer webxr quick-look");
+            modelo.setAttribute("tone-mapping", "neutral");
+            modelo.setAttribute("shadow-intensity", "1");
+            modelo.classList.add("model-viewer");
+
+            contenedor.appendChild(modelo);
+        });
+    });
+    </script>
+        
+    </body>
+</html>

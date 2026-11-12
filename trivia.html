@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Como la beisbol</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">    
+    </head>
+    <body>
+
+
+    <main class="page page-trivia">
+      <div id="header-container">
+        <!-- El contenido del header se carga aquí mediante JavaScript asi creo que es mas facil de enteder, mas modular xd -->
+      </div>
+      
+
+      <div class="contenedor-general"> <!--No se como ponerle la esctructura a este div xd-->
+        
+      <h2 class="Bienvenido">
+        <span class="bienvenida-titulo">BIENVENIDO A LA TRIVIA DE BEISBOL</span>
+        <span class="bienvenida-reglas">
+          <span class="regla"><b>5</b>rondas</span>
+          <span class="regla"><b>10</b>preguntas</span>
+          <span class="regla"><b>2</b>min por ronda</span>
+        </span>
+      </h2>
+        <button class="Empezar" id="Empezar">¡Empezar!</button>
+        <div class="InfoTest">
+          <h2 class="titulo-interior">TRIVIA</h2>
+          <span class="question-count">
+            <small>Pregunta</small>
+            <b class="valor"><span id="current">1</span>/<span id="total">5</span></b>
+          </span>
+          <span class="timer">
+            <small>Tiempo</small>
+            <b class="valor"><span id="time">60</span>s</b>
+        </span>
+        <span class="score">
+            <small>Puntos</small>
+            <b class="valor"><span id="score">0</span></b>
+          </span>
+        </div>
+        <div class="pregunta ">
+          <p class="Titulo-de-pregunta" id="Titulo-de-pregunta">Nombre de pregunta</p>
+          <div class="Posibles-Respuestas">
+            <div class = "Respuesta">
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Opcion A</label>
+          </div>
+          <div class = "Respuesta">
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Opcion B</label>
+          </div>
+           <div class = "Respuesta">
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Opcion C</label>
+          </div>
+          </div>
+          <br>
+          <button class="enviar" id="enviar">Enviar</button>
+        </div>
+        <div class="Victoria">
+          <h2 class="titulo-Final">Felicidades</h2>
+          <p class="resultado-mensaje" id="resultado-mensaje"></p>
+          <div class="resultado-puntos">
+            <span class="resultado-etiqueta">Tu puntuación</span>
+            <span class="resultado-numero"><span id="final-score">0</span><small>/1000</small></span>
+          </div>
+          <p class="resultado-tiempo">⏱ <span id="completition-time">0</span> segundos</p>
+          <button class="Siguiente" id="Siguiente">Siguiente Ronda</button>
+          <button class="Menu1">Jugar de nuevo</button>
+        </div>
+        <br>
+        </div>
+      </div>
+    </main>
+    <script src="js/javascript.js"></script>
+    </body>
+</html>

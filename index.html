@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo la Béisbol</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+  <div id="header-container">
+    <!-- El contenido del header se carga aquí mediante JavaScript asi creo que es mas facil de enteder, mas modular xd -->
+  </div>
+    <section class="slider" aria-label="Carrusel de imágenes">
+
+      <!-- SLIDER --------------------------------------------------- -->
+
+      <div class="slides">
+
+    <!-- ESCANEAR -->
+        <div class="slide">
+          <a href="escaneo.html" class="slide-link">
+            <p class="slide-descripcion">Desbloquea contenido exclusivo y toma fotos con Realidad Aumentada</p>
+            <h2 class="slide-titulo">ESCANEAR</h2>
+          </a>
+        </div>
+    <!-- EQUIPOS -->
+        <div class="slide">
+          <a href="equipos.html" class="slide-link">
+            <p class="slide-descripcion">Conoce a la zona sur de la LMB</p>
+            <h2 class="slide-titulo">EQUIPOS</h2>
+          </a>
+        </div>
+    <!-- MINIJUEGO -->
+        <div class="slide">
+          <a href="minijuego.html" class="slide-link">
+            <p class="slide-descripcion">Batea y consigue la máxima cantidad de puntos posible</p>
+            <h2 class="slide-titulo">MINIJUEGO</h2>
+          </a>
+        </div>
+    <!-- TRIVIA -->
+        <div class="slide">
+          <a href="trivia.html" class="slide-link">
+            <p class="slide-descripcion">¿Cuánto sabes sobre la LMB?</p>
+            <h2 class="slide-titulo">TRIVIA</h2>
+          </a>
+        </div>
+    <!-- HISTORIA -->
+        <div class="slide">
+          <a href="historia.html" class="slide-link">
+            <p class="slide-descripcion">Aprende sobre la trayectoria de la LMB</p>
+            <h2 class="slide-titulo">HISTORIA</h2>
+          </a>
+        </div>
+    <!-- GALERÍA -->
+        <div class="slide">
+          <a href="galeria.html" class="slide-link">
+            <p class="slide-descripcion">Revive momentos inolvidables</p>
+            <h2 class="slide-titulo">GALERÍA</h2>
+          </a>
+        </div>
+    </div>
+<!--  --------------------------------------------------- -->
+      <button class="arrow previous" aria-label="Imagen anterior">
+        <svg width="16" height="18" viewBox="0 0 16 18" fill="none">
+          <path
+            d="M11 17 4 9l7-8"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+
+      <button class="arrow next" aria-label="Siguiente imagen">
+        <svg width="16" height="18" viewBox="0 0 16 18" fill="none">
+          <path
+            d="m5 1 7 8-7 8"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+
+      <div class="dots" aria-hidden="true">
+        <i class="dot active"></i>
+        <i class="dot"></i>
+        <i class="dot"></i>
+        <i class="dot"></i>
+        <i class="dot"></i>
+        <i class="dot"></i>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="sections" aria-label="Secciones">
+      <a class="card-link" href="escaneo.html" aria-label="Abrir escáner de realidad aumentada">
+        <article class="card scan">
+          <span>ESCANEAR</span>
+        </article>
+      </a>
+      
+      <a class="card-link" href="equipos.html" aria-label="Abrir equipos">
+        <article class="card teams">
+          <span>EQUIPOS</span>
+        </article>
+      </a>  
+
+      <a class="card-link" href="minijuego.html" aria-label="Abrir minijuego">
+        <article class="card game">
+          <span>MINIJUEGO</span>
+        </article>
+      </a>
+
+      <a class="card-link" href="galeria.html" aria-label="Abrir galería">
+        <article class="card gallery">
+          <span>GALERÍA</span>
+        </article>
+      </a>
+
+      <a class="card-link" href="historia.html" aria-label="Abrir historia">
+        <article class="card history">
+          <span>HISTORIA</span>
+        </article>
+      </a>
+
+      <a class="card-link" href="trivia.html" aria-label="Abrir trivia">
+        <article class="card trivia">
+          <span>TRIVIA</span>
+        </article>
+      </a>
+    </section>
+  </main>
+  <script src="js/javascript.js"></script>
+</body>
+</html>
